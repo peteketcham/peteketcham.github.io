@@ -18,7 +18,7 @@ def main():
         words = [word.rstrip() for word in file if re.search(valid_wordlist, word)]
     
     print("Guess word.  Results are g=green, y=yellow, b=black/no match")
-    _ = input("Press ctrl-c to exit at anytime")
+    print("Press ctrl-c to exit at anytime")
     
     try:
         while True:
@@ -26,7 +26,8 @@ def main():
             result = input("Results (g/y/b): ")
             regex_is = []
             regex_not = []
-            
+            if not guess or not result:
+                exit()
             for index, letter in enumerate(result):
                 if letter == "g":
                     # Match words that have that exact letter in that exact spot
