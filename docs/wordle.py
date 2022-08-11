@@ -4,6 +4,8 @@
 Wordle 'helper'
 """
 
+# import os
+# import sys
 import re
 # from pprint import pprint
 
@@ -12,7 +14,8 @@ def main():
     """
     """
     dict_file = "/usr/share/dict/words" # NOTE: MacOS dict location
-    
+    # dict_file = os.path.join(sys.path[0], "words5.txt")
+    # BUG: if I guess 'guess' and the answer only has one 's', then there's a yellow and a black and it eliminates all words with 's' in them
     valid_wordlist = r"^[a-z]{5}$"
     with open(dict_file, 'r') as file:
         words = [word.rstrip() for word in file if re.search(valid_wordlist, word)]
