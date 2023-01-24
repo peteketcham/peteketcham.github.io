@@ -39,3 +39,6 @@ tags
 
 # Coc configuration directory
 .vim
+
+# Manual add
+.DS_Store
