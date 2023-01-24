@@ -18,7 +18,7 @@ googleAnalytics = "UA-91548413-1"
   env = "production"
   title = "Pete's Blog"
   description = "ExampleSite description"
-  keywords = "[Blog, Portfolio, PaperMod]"
+  keywords = ["Blog", "Portfolio", "PaperMod"]
   author = "Pete Ketcham"
   # author = "["Me", "You"] # multiple authors
 #   images = '["<link or path of image for opengraph, twitter-cards>"]'
@@ -65,7 +65,7 @@ googleAnalytics = "UA-91548413-1"
     [[buttons]]
         name = "Posts"
         url = "posts"
-    
+
     [[buttons]]
         name = "Tags"
         url = "tags"

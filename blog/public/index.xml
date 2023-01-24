@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Pete&#39;s Blog</title>
+    <link>https://www.peteketcham.com/</link>
+    <description>Recent content on Pete&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 23 Jan 2023 18:26:25 -0600</lastBuildDate><atom:link href="https://www.peteketcham.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Quick_jar_lift</title>
+      <link>https://www.peteketcham.com/posts/quick_jar_lift/</link>
+      <pubDate>Mon, 23 Jan 2023 18:26:25 -0600</pubDate>
+      
+      <guid>https://www.peteketcham.com/posts/quick_jar_lift/</guid>
+      <description>Quick 3D model for elevating a wide mouth pint jar model in action
+We&amp;rsquo;ve hit full winter blues at home, and have decided to start some plants really early. They might end up being microgreens, they might not make it, who knows, but first the seeds have to germinate. As part of that, they&amp;rsquo;re wet a few times a day and are left to figure it out in the jar. So they don&amp;rsquo;t end up sitting in water, the jar needs to be upside down, and lifted from the countertop.</description>
+    </item>
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://www.peteketcham.com/posts/my-first-post/</link>
+      <pubDate>Wed, 04 May 2022 18:34:07 -0500</pubDate>
+      
+      <guid>https://www.peteketcham.com/posts/my-first-post/</guid>
+      <description>Hello World!</description>
+    </item>
+    
+  </channel>
+</rss>
