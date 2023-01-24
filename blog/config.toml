@@ -1,7 +1,7 @@
 baseURL = 'https://www.peteketcham.com/'
 languageCode = 'en-us'
 title = "Pete's Blog"
-theme = "papermod"
+theme = "PaperMod"
 
 enableRobotsTXT = true
 buildDrafts = false
