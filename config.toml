@@ -17,20 +17,19 @@ googleAnalytics = "UA-91548413-1"
 [params]
   env = "production"
   title = "Pete's Blog"
-  description = "ExampleSite description"
+  description = "Hobbies, projects, and ideas that I've worked on.  3D printing, home improvement projects, code snippets, etc."
   keywords = ["Blog", "Portfolio", "PaperMod"]
   author = "Pete Ketcham"
-  # author = "["Me", "You"] # multiple authors
 #   images = '["<link or path of image for opengraph, twitter-cards>"]'
   DateFormat = "January 2, 2006"
   defaultTheme = "auto" # dark, light
   disableThemeToggle = false
 
   ShowReadingTime = true
-  ShowShareButtons = true
+  ShowShareButtons = false
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
-  ShowCodeCopyButtons = false
+  ShowCodeCopyButtons = true
   disableSpecial1stPost = false
   disableScrollToTop = false
   comments = false
