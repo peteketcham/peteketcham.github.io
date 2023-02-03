@@ -11,7 +11,7 @@ buildExpired = false
 googleAnalytics = "UA-91548413-1"
 
 [minify]
-  disableXML = true
+  disableXML = false
   minifyOutput = true
 
 [params]
@@ -20,7 +20,7 @@ googleAnalytics = "UA-91548413-1"
   description = "Hobbies, projects, and ideas that I've worked on.  3D printing, home improvement projects, code snippets, etc."
   keywords = ["Blog", "Portfolio", "PaperMod"]
   author = "Pete Ketcham"
-#   images = '["<link or path of image for opengraph, twitter-cards>"]'
+  images = ["/og-cicada.jpg", "/tc-cicada.jpg"]
   DateFormat = "January 2, 2006"
   defaultTheme = "auto" # dark, light
   disableThemeToggle = false
@@ -41,11 +41,11 @@ googleAnalytics = "UA-91548413-1"
 [assets]
     # disableHLJS = true # to disable highlight.js
     # disableFingerprinting = true
-    favicon = "<link / abs url>"
-    favicon16x16 = "<link / abs url>"
-    favicon32x32 = "<link / abs url>"
-    apple_touch_icon = "<link / abs url>"
-    safari_pinned_tab = "<link / abs url>"
+    favicon = "/facicon.ico"
+    favicon16x16 = "/facicon-16x16.ico"
+    favicon32x32 = "/facicon-32x32.ico"
+    apple_touch_icon = "/apple-touch-icon.png"
+    # safari_pinned_tab = "<link / abs url>"
 
 [label]
     text = "Home"
@@ -55,12 +55,12 @@ googleAnalytics = "UA-91548413-1"
 # profile-mode
 [profileMode]
     enabled = "false" # needs to be explicitly set
-    title = "ExampleSite"
-    subtitle = "This is subtitle"
-    imageUrl = "<img location>"
+    title = "Pete's Blog"
+    subtitle = "Thoughts or things"
+    imageUrl = "/sq-cicada.jpg"
     imageWidth = 120
     imageHeight = 120
-    imageTitle = "my image"
+    imageTitle = "cicada"
     [[buttons]]
         name = "Posts"
         url = "posts"
@@ -77,9 +77,9 @@ googleAnalytics = "UA-91548413-1"
   [[socialIcons]]
         name = "twitter"
         url = "https://twitter.com/peteketcham"
-  [[socialIcons]]
-        name = "stackoverflow"
-        url = "https://stackoverflow.com"
+  # [[socialIcons]]
+  #       name = "stackoverflow"
+  #       url = "https://stackoverflow.com"
   [[socialIcons]]
         name = "github"
         url = "https://github.com/peteketcham"
@@ -116,3 +116,6 @@ googleAnalytics = "UA-91548413-1"
     name = "peteketcham.com"
     url = "https://www.peteketcham.com"
     weight = 30
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
