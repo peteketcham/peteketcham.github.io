@@ -20,8 +20,8 @@ googleAnalytics = "UA-91548413-1"
   description = "Hobbies, projects, and ideas that I've worked on.  3D printing, home improvement projects, code snippets, etc."
   keywords = ["Blog", "Portfolio", "PaperMod"]
   author = "Pete Ketcham"
-  images = ["/og-cicada.jpg", "/tc-cicada.jpg"]
-  DateFormat = "January 2, 2006"
+  images = ["/images/og-cicada.jpg", "/images/tc-cicada.jpg"]
+  DateFormat = "January 2, 2023"
   defaultTheme = "auto" # dark, light
   disableThemeToggle = false
 
@@ -41,23 +41,23 @@ googleAnalytics = "UA-91548413-1"
 [assets]
     # disableHLJS = true # to disable highlight.js
     # disableFingerprinting = true
-    favicon = "/facicon.ico"
-    favicon16x16 = "/facicon-16x16.ico"
-    favicon32x32 = "/facicon-32x32.ico"
-    apple_touch_icon = "/apple-touch-icon.png"
+    favicon = "/images/facicon.ico"
+    favicon16x16 = "/images/facicon-16x16.ico"
+    favicon32x32 = "/images/facicon-32x32.ico"
+    apple_touch_icon = "/images/apple-touch-icon.png"
     # safari_pinned_tab = "<link / abs url>"
 
 [label]
     text = "Home"
-    icon = "/apple-touch-icon.png"
+    icon = "/images/apple-touch-icon.png"
     iconHeight = 35
 
 # profile-mode
 [profileMode]
-    enabled = "false" # needs to be explicitly set
+    enabled = "true" # needs to be explicitly set
     title = "Pete's Blog"
     subtitle = "Thoughts or things"
-    imageUrl = "/sq-cicada.jpg"
+    imageUrl = "/images/sq-cicada.jpg"
     imageWidth = 120
     imageHeight = 120
     imageTitle = "cicada"
