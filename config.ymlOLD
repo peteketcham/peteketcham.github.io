@@ -43,11 +43,11 @@ params:
   showtoc: false
   tocopen: false
 
-assets:
-    favicon: "/images/facicon.ico"
-    favicon16x16: "/images/facicon-16x16.ico"
-    favicon32x32: "/images/facicon-32x32.ico"
-    apple_touch_icon: "/images/apple-touch-icon.png"
+# assets:
+#     favicon: "/images/facicon.ico"
+#     favicon16x16: "/images/facicon-16x16.ico"
+#     favicon32x32: "/images/facicon-32x32.ico"
+#     apple_touch_icon: "/images/apple-touch-icon.png"
 
 label:
   text: Home
