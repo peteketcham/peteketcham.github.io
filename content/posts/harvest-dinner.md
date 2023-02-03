@@ -6,8 +6,6 @@ draft: false
 
 ![Plated Dinner](/harvest-dinner/plated.jpg)
 
-# Intro
-
 I was asked at the end of September if I would be willing to do the harvest dinner this past November at my church, and it ended up being quite the event-- I planned the menu, picked up the ingredients, and cooked (with lots of wonderful help) a delicious meal for 100 people.  It was fun, and hard, and complex, and wanted to share the recipes and some background of the different things that were made.
 
 
