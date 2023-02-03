@@ -4,8 +4,6 @@ date: 2023-02-02T13:55:08-06:00
 draft: false
 ---
 
-# Harvest Dinner
-
 ![Plated Dinner](/harvest-dinner/plated.jpg)
 
 # Intro
