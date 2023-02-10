@@ -6,4 +6,4 @@ draft: false
 
 Hello World!
 
-{{< cld-response "/v1676048055/images/cicada.jpg">%}}
+{{< dynamic-img src="/images/cicada_skmd9t.jpg" alt="Cicada">}}
