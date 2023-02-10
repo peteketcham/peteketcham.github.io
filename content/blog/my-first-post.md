@@ -6,4 +6,4 @@ draft: false
 
 Hello World!
 
-{{< dynamic-img "/images/cicada.jpg" >}}
+{{< dynamic-img "/images/cicada.jpg" >%}}
