@@ -6,4 +6,4 @@ draft: false
 
 Hello World!
 
-{{< dynamic-img "405695fe529ac0b12229f1b4712c04ad">}}
+{{< dynamic-img "/v1676048055/portfolio/images/cicada_skmd9t.jpg">}}
