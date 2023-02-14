@@ -1,6 +1,6 @@
 ---
 title: "Rehosting"
-date: 2022-08-11T14:25:34-05:00
+date: 2023-02-14T14:25:34-06:00
 draft: false
 ---
 
@@ -18,15 +18,6 @@ up of monitoring and the overall lifecycle of the application. We would
 serve as a liaison between the development and DevOps teams and the
 datacenter services teams (e.g., OS management, database, networking,
 etc.).
-
-
-## Table of Contents
-1.  [Introduction](#datacenter-migration)
-2.  [The Project](#the-project)
-3.  [The Setup](#the-setup)
-4.  [Working the Project](#working-the-project)
-5.  [Retrospective](#retrospective)
-
 
 ## The Project
 
