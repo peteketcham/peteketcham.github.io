@@ -1,7 +1,7 @@
 ---
 title: "Rehosting"
 date: 2022-08-11T14:25:34-05:00
-draft: true
+draft: false
 ---
 
 
@@ -88,9 +88,8 @@ running. I took the opportunity to take what they'd done so far, what
 the error messages were, and start walking through the architecture with
 them to track down the problem.
 
-![](media/image1.png){width="6.5in" height="5.533333333333333in"}
+![UTP Architecture Diagram](migration/utp-arch.svg)
 
-Figure : UTP Architecture Diagram
 
 Walking through it step by step, they guided me to quickly draw up the
 applications functions on a whiteboard and how work flowed through the
@@ -181,9 +180,8 @@ dedicated a project manager to help with the orchestration---what are
 our blocking issues, who else needs to be brought in, what leverage can
 be applied to make certain tasks go faster, etc.
 
-![](media/image3.png){width="6.5in" height="5.13125in"}
+![OTP, Mini-OTP, and OXTP high-level architecture](migration/otp-arch.svg)
 
-Figure : OTP, Mini-OTP, and OXTP high-level architecture
 
 With more people involved in the migration, my role transitioned into a
 project lead---I would find and assign tasks, assist the team with their
