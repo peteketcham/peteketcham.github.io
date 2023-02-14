@@ -8,7 +8,7 @@ draft: false
 
 ## Datacenter Migration
 
-At my previous employer (referred to as HC), their growth into new businesses has
+At a previous employer, their growth into new businesses had
 traditionally been through acquisition of other companies. My team was responsible
 for supporting the production and QA environments for applications servicing the
 accounting and tax markets. Typically, our role would involve onboarding,
@@ -30,10 +30,9 @@ etc.).
 
 ## The Project
 
-One of the applications we were tasked with onboarding while I was with
-HC was a product suite I'm going to refer to as OTP. This was a new
+One of the applications we were tasked with onboarding was a product suite I'm going to refer to as OTP. This was a new
 product category for the company and industry, due to
-new financial regulations a few years earlier. The acquiured business was about 4
+new market regulations a few years earlier. The acquiured business was about 4
 years old at this point and they were running out of a managed services
 3rd party datacenter. I was tasked with the planning and orchestration
 of the move into a company owned and managed datacenter.
@@ -41,14 +40,11 @@ of the move into a company owned and managed datacenter.
 This business was a suite of several different products:
 
 - OTP -- "One Tax Product", the flagship application.
-
 - Mini-OTP -- Barebones version of OTP intended for data entry for
     limited users.
-
 - UTP -- "Uther\[sp.\] Tax Product", began as a rewrite of OTP as a
     web-based application, but was transitioned into a wholly new
     product offering halfway through development.
-
 - OXTP -- "Other Cross Tax Product", custom app for a single customer
     that became a wholly new product offering.
 
@@ -101,16 +97,11 @@ applications functions on a whiteboard and how work flowed through the
 system. We quickly found that:
 
 - They had no errors on the web tier of the application
-
 - The ETL processes were throwing error messages across all parts of
     the process and all versions
-
     - The errors persisted through a service restart
-
 - MongoDB was showing no errors
-
 - The Oracle DB was showing no errors
-
     - They were able to verify that transactions involving the DB were
         completing successfully.
 
@@ -170,13 +161,10 @@ another 9 months. I also obtained:
 
 - A tech writer to help document runbooks, architectures, processes,
     etc.
-
 - A Linux systems administrator to help with the setup,
     administration, and automation for UTP and Mini-OTP
-
 - A Virtualization/Windows administrator to help with setup,
     administration, and automation for the desktop app portion of OTP
-
 - A Windows administrator/generalist to help with the IIS and 'other'
     portions of the applications
 
@@ -264,7 +252,7 @@ scrutiny from poring over the applications in such detail allowed us to
 find and remedy multiple security vulnerabilities. The improved
 relationship between the business and datacenter operations helped each
 better anticipate the other's needs and opened the door for additional
-integrations between OTP and other HC products.
+integrations between OTP and other company products.
 
 I learned a lot about managing without influence---working with teams
 and individuals that have no organizational reason to help, working with
