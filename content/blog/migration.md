@@ -89,7 +89,7 @@ the error messages were, and start walking through the architecture with
 them to track down the problem.
 
 ![UTP Architecture Diagram](migration/utp-arch.svg)
-
+{{< svg "/migration/utp-arch.svg" >}}
 
 Walking through it step by step, they guided me to quickly draw up the
 applications functions on a whiteboard and how work flowed through the
@@ -180,7 +180,7 @@ dedicated a project manager to help with the orchestration---what are
 our blocking issues, who else needs to be brought in, what leverage can
 be applied to make certain tasks go faster, etc.
 
-![OTP, Mini-OTP, and OXTP high-level architecture](migration/otp-arch.svg)
+![OTP, Mini-OTP, and OXTP high-level architecture](/migration/otp-arch.svg)
 
 
 With more people involved in the migration, my role transitioned into a
