@@ -5,22 +5,28 @@ draft: false
 ---
 
 
-# Table of Contents
-1.  [Introduction](#introduction)
-2.  [The Project](#the-project)
-3.  [The Setup](#the-setup)
-4.  [Working the Project](#working-the-project)
-5.  [Retrospective](#retrospective)
 
+## Datacenter Migration
 
-## Introduction
-
-At my previous employer (referred to as HC), their growth into new businesses has traditionally been through acquisition of other companies. My team was responsible for supporting the production and QA environments for applications servicing the accounting and tax markets. Typically, our role would involve onboarding, releases, building of new servers and environments,
+At my previous employer (referred to as HC), their growth into new businesses has
+traditionally been through acquisition of other companies. My team was responsible
+for supporting the production and QA environments for applications servicing the
+accounting and tax markets. Typically, our role would involve onboarding,
+releases, building of new servers and environments,
 decommissioning of old servers, applications, and environments, setting
 up of monitoring and the overall lifecycle of the application. We would
 serve as a liaison between the development and DevOps teams and the
 datacenter services teams (e.g., OS management, database, networking,
 etc.).
+
+
+## Table of Contents
+1.  [Introduction](#datacenter-migration)
+2.  [The Project](#the-project)
+3.  [The Setup](#the-setup)
+4.  [Working the Project](#working-the-project)
+5.  [Retrospective](#retrospective)
+
 
 ## The Project
 
@@ -88,8 +94,7 @@ running. I took the opportunity to take what they'd done so far, what
 the error messages were, and start walking through the architecture with
 them to track down the problem.
 
-![UTP Architecture Diagram](migration/utp-arch.svg)
-{{< svg "/migration/utp-arch.svg" >}}
+{{< dynamic-img src="/migration/utp-arch.svg" alt="UTP Architecture Diagram">}}
 
 Walking through it step by step, they guided me to quickly draw up the
 applications functions on a whiteboard and how work flowed through the
@@ -180,7 +185,7 @@ dedicated a project manager to help with the orchestration---what are
 our blocking issues, who else needs to be brought in, what leverage can
 be applied to make certain tasks go faster, etc.
 
-![OTP, Mini-OTP, and OXTP high-level architecture](/migration/otp-arch.svg)
+{{< dynamic-img src="/migration/otp-arch.svg" alt="OTP, Mini-OTP, and OXTP high-level architecture">}}
 
 
 With more people involved in the migration, my role transitioned into a
