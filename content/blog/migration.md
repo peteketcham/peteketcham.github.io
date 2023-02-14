@@ -40,16 +40,16 @@ of the move into a company owned and managed datacenter.
 
 This business was a suite of several different products:
 
--   OTP -- "One Tax Product", the flagship application.
+- OTP -- "One Tax Product", the flagship application.
 
--   Mini-OTP -- Barebones version of OTP intended for data entry for
+- Mini-OTP -- Barebones version of OTP intended for data entry for
     limited users.
 
--   UTP -- "Uther\[sp.\] Tax Product", began as a rewrite of OTP as a
+- UTP -- "Uther\[sp.\] Tax Product", began as a rewrite of OTP as a
     web-based application, but was transitioned into a wholly new
     product offering halfway through development.
 
--   OXTP -- "Other Cross Tax Product", custom app for a single customer
+- OXTP -- "Other Cross Tax Product", custom app for a single customer
     that became a wholly new product offering.
 
 Due to some contractual obligations, these apps were running multiple
@@ -100,18 +100,18 @@ Walking through it step by step, they guided me to quickly draw up the
 applications functions on a whiteboard and how work flowed through the
 system. We quickly found that:
 
--   They had no errors on the web tier of the application
+- They had no errors on the web tier of the application
 
--   The ETL processes were throwing error messages across all parts of
+- The ETL processes were throwing error messages across all parts of
     the process and all versions
 
-    -   The errors persisted through a service restart
+    - The errors persisted through a service restart
 
--   MongoDB was showing no errors
+- MongoDB was showing no errors
 
--   The Oracle DB was showing no errors
+- The Oracle DB was showing no errors
 
-    -   They were able to verify that transactions involving the DB were
+    - They were able to verify that transactions involving the DB were
         completing successfully.
 
 As we mapped it out how these pieces fit together, I was able to point
@@ -168,16 +168,16 @@ being up and running. I brought 4 contractors into the project at this
 point to help with the workload, and the migration was pushed out for
 another 9 months. I also obtained:
 
--   A tech writer to help document runbooks, architectures, processes,
+- A tech writer to help document runbooks, architectures, processes,
     etc.
 
--   A Linux systems administrator to help with the setup,
+- A Linux systems administrator to help with the setup,
     administration, and automation for UTP and Mini-OTP
 
--   A Virtualization/Windows administrator to help with setup,
+- A Virtualization/Windows administrator to help with setup,
     administration, and automation for the desktop app portion of OTP
 
--   A Windows administrator/generalist to help with the IIS and 'other'
+- A Windows administrator/generalist to help with the IIS and 'other'
     portions of the applications
 
 Additionally, both the business and the datacenter operations groups
