@@ -1,7 +1,7 @@
 ---
 title: "Project Euler"
 date: 2023-03-08T15:26:49-06:00
-draft: true
+draft: false
 author:
 tags: [programming, math, Python]
 image:
