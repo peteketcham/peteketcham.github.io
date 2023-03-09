@@ -52,8 +52,6 @@ if __name__ == '__main__':
     assert brute_calc(104) == 49348022079085897
 ```
 
-**NOTE: This is just about unreadable in darkmode, toggle to light mode in the upper right of the page**
-
 While great, this slows down **very** quickly.  It runs in `O(n^4)` time, and wouldn't be done until long after our sun is burned out and gone.
 
 
