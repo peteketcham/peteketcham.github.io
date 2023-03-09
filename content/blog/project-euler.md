@@ -29,6 +29,10 @@ Find T(10^8) mod 1000000007.
 
 ## First attempt
 
+![](https://mathworld.wolfram.com/images/eps-svg/GausssCircleProblem_650.svg)
+
+Here's a quick visualization of the problem as a circle.  We're going to try and count all the points on or in the circle.
+
 For a first pass, I try and put together a really simple solution to validate the test case(s).  They almost never actually work to solve the problem since they scale poorly.  Here's some simple code that covers every coordinate in the hypercube bounded by radius `in_r`.
 
 ```
@@ -65,7 +69,9 @@ Additionally, there are boxed spaces you can immediately rule out as not having 
 
 While this is great, it's only a fractional change.  It rules out just over half of the problem space, but it's still a problem set that grows exponentially with the radius, and not a workable solution.
 
-We're at about 7/16 of the orignal problem size with this change.
+We're at about 7/16 of the orignal problem size with this change.  You can visualize it here in this circle-- the teal square is the first pass, and the blue wedge is the set of unique coordinates translated to the other axes and permutated.
+
+![](/project-euler/circle-reduction.png)
 
 ### Setting scope
 
