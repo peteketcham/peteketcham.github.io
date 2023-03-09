@@ -31,7 +31,26 @@ Find T(10^8) mod 1000000007.
 
 For a first pass, I try and put together a really simple solution to validate the test case(s).  They almost never actually work to solve the problem since they scale poorly.  Here's some simple code that covers every coordinate in the hypercube bounded by radius `in_r`.
 
-{{< gist peteketcham 515aebdce33a29c16cd60fca29d90a11 >}}
+```
+def brute_calc(in_r):
+    """iterate through hypercube of radius r"""
+    ring = in_r**2
+    result = 0
+    for x_axis in range(-in_r, in_r + 1):
+        for y_axis in range(-in_r, in_r + 1):
+            for z_axis in range(-in_r, in_r + 1):
+                for t_axis in range(-in_r, in_r + 1):
+                    if ring >= x_axis**2 + y_axis**2 + z_axis**2 + t_axis**2:
+                        result += 1
+    return result
+
+
+if __name__ == '__main__':
+    assert brute_calc(2) == 89
+    assert brute_calc(5) == 3121
+    assert brute_calc(100) == 493490641
+    assert brute_calc(104) == 49348022079085897
+```
 
 **NOTE: This is just about unreadable in darkmode, toggle to light mode in the upper right of the page**
 
