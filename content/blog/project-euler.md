@@ -71,7 +71,7 @@ While this is great, it's only a fractional change.  It rules out just over half
 
 We're at about 7/16 of the orignal problem size with this change.  You can visualize it here in this circle-- the teal square is the first pass, and the blue wedge is the set of unique coordinates translated to the other axes and permutated.
 
-![](/project-euler/circle-reduction.png)
+{{< dynamic-img src="/project-euler/circle-reduction.png" alt="Circle">}}
 
 ### Setting scope
 
