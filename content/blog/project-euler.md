@@ -17,7 +17,7 @@ Project Euler problems are math heavy problems that you typically need to write 
 
 ## Problem 596
 
-So, I've solved 150+ problems at this point, and tend to skip around on different problems to solve.  One that looked really interesting, but ended up being devilishly hard for me to solve was [problem 596](https://projecteuler.net/problem=596).
+So, I've solved 150+ problems at this point, and tend to skip around on different problems to solve.  One that looked interesting, but ended up being devilishly hard for me to solve was [problem 596](https://projecteuler.net/problem=596).
 
 The problem is as follows:
 
@@ -33,7 +33,7 @@ Find T(10^8) mod 1000000007.
 
 Here's a quick visualization of the problem as a circle.  We're going to try and count all the points on or in the circle.
 
-For a first pass, I try and put together a really simple solution to validate the test case(s).  They almost never actually work to solve the problem since they scale poorly.  Here's some simple code that covers every coordinate in the hypercube bounded by radius `in_r`.
+For a first pass, I try and put together a simple solution to validate the test case(s).  They almost never actually work to solve the problem since they scale poorly.  Here's some simple code that covers every coordinate in the hypercube bounded by radius `in_r`.
 
 ```
 def brute_calc(in_r):
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     assert brute_calc(104) == 49348022079085897
 ```
 
-While great, this slows down **very** quickly.  It runs in `O(n^4)` time, and wouldn't be done until long after our sun is burned out and gone.
+While great, this slows down **very** quickly.  It runs in `O(n^4)` time and wouldn't be done until long after our sun is burned out and gone.
 
 
 ## Other attempts
@@ -69,13 +69,13 @@ Additionally, there are boxed spaces you can immediately rule out as not having 
 
 While this is great, it's only a fractional change.  It rules out just over half of the problem space, but it's still a problem set that grows exponentially with the radius, and not a workable solution.
 
-We're at about 7/16 of the orignal problem size with this change.  You can visualize it here in this circle-- the teal square is the first pass, and the blue wedge is the set of unique coordinates translated to the other axes and permutated.
+We're at about 7/16 of the original problem size with this change.  You can visualize it here in this circle-- the teal square is the first pass, and the blue wedge is the set of unique coordinates translated to the other axes and permutated.
 
 {{< dynamic-img src="/project-euler/circle-reduction.png" alt="Circle">}}
 
 ### Setting scope
 
-After reducing the space by cutting out the center and the corners, we can try and reduce it more by handling translation across the different dimensions.  For example in a circle, if `(x, y)` is within the cirlce, so is `(x, -y)`, `(-x, y)`, and `(-x, -y)`.  If you take care to catch situations where points lie on an axis or are the same value so they aren't double counted (e.g., `(1, 2, 0, 0)` or `(1, 2, 3, 3)`), you can take your match and multiply it by 16 to catch all the different quadrants the coordinates end up in.
+After reducing the space by cutting out the center and the corners, we can try and reduce it more by handling translation across the different dimensions.  For example, in a circle, if `(x, y)` is within the circle, so is `(x, -y)`, `(-x, y)`, and `(-x, -y)`.  If you take care to catch situations where points lie on an axis or are the same value so they aren't double counted (e.g., `(1, 2, 0, 0)` or `(1, 2, 3, 3)`), you can take your match and multiply it by 16 to catch all the different quadrants the coordinates end up in.
 
 Similarly, you can reduce by the permutations of the coordinates.  If `(1, 2, 3, 3)` is in the circle, so is `(1, 3, 2, 3)` and `(1, 3, 3, 2)`, and so on.  If the numbers are all unique, there are 24 different permutations.
 
@@ -85,7 +85,7 @@ Still `O(n^4)`, still more work to do...
 
 ### Multithreading
 
-Ok, now lets say we have a fancy computer with a whole mess of cores that are just sitting there unused while we wait for the heat death of the universe!  Let's put them all to work!
+Ok, now let's say we have a fancy computer with a whole mess of cores that are just sitting there unused while we wait for the heat death of the universe!  Let's put them all to work!
 
 ```
 from multiprocessing import Pool, cpu_count
@@ -124,13 +124,13 @@ Now as long as we have enough system memory to hold a 10^8 Python list in memory
 
 ## Final point
 
-All of this work refining, and we've managed to speed up from the brute force by over 99.95%!  ...and it's still FAR too slow.  Time for a new approach.  How can I reduce the number of dimensions we're checking across?  Is this a problem that I can find an answer to for spheres?  Or circles?  [Gauss' Circle Problem](https://mathworld.wolfram.com/GausssCircleProblem.html)!
+All this work refining, and we've managed to speed up from the brute force by over 99.95%!  ...and it's still FAR too slow.  Time for a new approach.  How can I reduce the number of dimensions we're checking across?  Is this a problem that I can find an answer to for spheres?  Or circles?  [Gauss' Circle Problem](https://mathworld.wolfram.com/GausssCircleProblem.html)!
 
 ```
 N(r) = 1 + 4 * r + 4 + sum((int(sqrt(r\*\*2 - i\*\*2)) for i in range(1, r+1)))
 ```
 
-So we can't use this with the shortcuts from the second bit of code, but we can take the first one, adjust the ranges and can combine z and t axes into a single loop:
+So, we can't use this with the shortcuts from the second bit of code, but we can take the first one, adjust the ranges and can combine z and t axes into a single loop:
 
 ```
 for x_axis in range(-in_r, in_r+1):
@@ -140,4 +140,4 @@ for x_axis in range(-in_r, in_r+1):
         result += 1 + 4 * r + 4 + sum((int(sqrt(r\*\*2 - i\*\*2)) for i in range(1, r+1)))
 ```
 
-Not bad, down to `O(n^3)`!  Project Euler solutions aren't really supposed to be shared for anything after problem 100, so I'll leave it here.
+Not bad, down to `O(n^3)`!  Project Euler solutions aren't supposed to be shared for anything after problem 100, so I'll leave it here.  I hope this has been interesting-- I've found working on the Project Euler problems has made me far more aware of how I'm writing code to run, and what exactly I'm trying to optimize.
