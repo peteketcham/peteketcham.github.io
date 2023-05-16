@@ -1,2 +1,4 @@
 # peteketcham.github.io
-GitHub Pages 
+## GitHub Pages
+
+Stub README.md for blog.
